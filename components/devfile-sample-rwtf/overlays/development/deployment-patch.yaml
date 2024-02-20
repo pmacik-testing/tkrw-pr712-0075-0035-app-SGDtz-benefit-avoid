@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rwtf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0035-tenant/tkrw-pr712-0075-0035-app/devfile-sample-rwtf@sha256:8c0f1d9fec97822200e657ff5f6eb9456e8471fa1567ee4a51e0a5f126611b45
+        name: my-nodejs
+        resources: {}
+status: {}
